@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script src="lib/p5.min.js"></script>
+  <script src="sketch.js"></script>
+
+  <!-- add extra scripts below -->
+  <script src="toolbox.js"></script>
+  <script src="helperFunctions.js"></script>
+
+  <script src="freehandTool.js"></script>
+  <script src="lineToTool.js"></script>
+  <script src="sprayCanTool.js"></script>
+  <script src="mirrorDrawTool.js"></script>
+  <script src="eraserTool.js"></script>
+  <script src="cutTool.js"></script>
+  <script src="lassoTool.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="box header">
+      <img src="assets/Logo.png" alt="App Logo">
+      <div class="button1">
+        <button id="newGraphicLayer">New Layer</button>
+        <button id="combineLayers">Combine Layers</button>
+        <button id="goPreviousLayer">Previous Layer</button>
+        <button id="goNextLayer">Next Layer</button>
+        <b><span>Current Layer: </span><span id="currentLayerSpan">1</span></b>
+      </div>
+    </div>
+    <div class="function">
+      <div class="button2">
+        <button id="clearButton">Clear</button>
+        <button id="saveImageButton">Save Image</button>
+      </div>
+    </div>
+
+    <div class="box" id="sidebar"></div>
+    <div id="content" style="margin-left: 5px; margin-bottom: 0px; margin-top: 0px;"></div>
+    <div class="box options"></div>
+
+  </div>
+
+</body>
+
+</html>
